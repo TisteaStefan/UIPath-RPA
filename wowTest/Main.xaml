@@ -1,0 +1,520 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Azure.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Azure.Activities</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Azure</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Azure.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="927.6,7182.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Item" />
+      <Variable x:TypeArguments="x:Int32" Name="RowToComplete" />
+      <Variable x:TypeArguments="x:String" Name="Skill_Level" />
+      <Variable x:TypeArguments="x:String" Name="NrToBeCrafted" />
+      <Variable x:TypeArguments="x:Int32" Name="index" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Simulated" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="World of Warcraft(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="536,5360.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="bf4d33ae-2de6-49be-8780-584aa0ac214a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="502.4,5061.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="TestString" />
+              <Variable x:TypeArguments="x:String" Name="WhatToCraft" />
+              <Variable x:TypeArguments="x:String" Name="Materials" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)]p[u(hk)]" Version="V5">
+              <uix:NKeyboardShortcuts.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Taloring'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf4d33ae-2de6-49be-8780-584aa0ac214a" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="6a991ToPd0O2MMAVEdm95Q" DesignTimeRectangle="157, 266, 34, 29" Guid="8ab68065-5713-4dba-89ce-b737d6b2d84e" ImageBase64="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" InformativeScreenshot="6a625407def99f015d735e7958e349e6.png" Reference="BfreUXIJNkqB7rdR721xDQ/3Oxja1rlu0GYSMg04uk6xA" ScopeSelectorArgument="&lt;wnd cls='GxWindowClassD3d' title='World of Warcraft' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="0, 0, 1298, 647" Guid="b36221b6-d058-4fab-a130-41e9dbcbd8a4" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)]p[u(hk)]" Version="V5">
+              <uix:NKeyboardShortcuts.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
+            <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="468.8,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Choose Item" OptionsString="[(&quot;Linen Cloth;Wool Cloth;Slik Cloth;Mageweave Cloth;Runecloth&quot;)]" Title="What To Craft" TopMost="False">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[WhatToCraft]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[WhatToCraft]" sap:VirtualizedContainerService.HintSize="468.8,3195.2" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+              <Switch.Default>
+                <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="467.2,89.6" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </Switch.Default>
+              <Sequence x:Key="Linen Cloth" DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,1605.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="433.6,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="How Many" Title="How Many" TopMost="False">
+                  <ui:InputDialog.Result>
+                    <OutArgument x:TypeArguments="x:String">[NrToBeCrafted]</OutArgument>
+                  </ui:InputDialog.Result>
+                </ui:InputDialog>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Selt of Liees Cloth D01'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf4d33ae-2de6-49be-8780-584aa0ac214a" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable ContentHash="pPYA0m_MI0qWiuI6i_WUjQ" DesignTimeRectangle="27, 307, 97, 17" Guid="09c09dfd-f9c2-4174-8bae-cae78b41036a" ImageBase64="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" InformativeScreenshot="17779dacf7fe540d86547feb59b2afe2.png" Reference="BfreUXIJNkqB7rdR721xDQ/sCzYkt1pikSYYY1ueEUMIw" ScopeSelectorArgument="&lt;wnd cls='GxWindowClassD3d' title='World of Warcraft' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="0, 0, 1298, 647" Guid="fd3c32a2-b1f2-478a-9f99-415ebda91462" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'World of Warcraft(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="bf4d33ae-2de6-49be-8780-584aa0ac214a" Text="[NrToBeCrafted]" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable ContentHash="vqIzIfyWu0uGbRbDNDY8Dg" DesignTimeRectangle="364, 437, 35, 27" Guid="ef1c4519-d533-4533-bda8-45b8d3523fd2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAbCAYAAAD28DaZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEFSURBVEhL7ZbRDYMgEEAppBWxE/jpCs7iCk7rCs5yDahXOLBaIWKafrwED8I9EOXYjXNICediGxGAC2B0sli8xGtQGSGA3YsSgshjPKT6TKmpoNCop0NYJpDkGzwBCgptyQQmX2VlvJccsfoWISrDGDudSch9XShT1/VpGJl5ZxzJbDtTViiDkleRMfGcMoX6VZm2baHvey++h6QyXdfBMAwwjqPXt4ekMpqmaeJkUh7gWJmkX1OczPundxEZZdr5ZeYLU7eTyMTwl1mDyjgX5RI4A5SZDzCiZQ4RqPAwTscSnGrPqgLTydhxOpbilaZT7LhMJHY9vCwom4yB7GImGRl4lvACHtf4YywI3VMAAAAASUVORK5CYII=" InformativeScreenshot="9eefdee875d38194d4d4696585b918ff.png" Reference="BfreUXIJNkqB7rdR721xDQ/kSb4_dxOU0yYTc13aURZow" ScopeSelectorArgument="&lt;wnd cls='GxWindowClassD3d' title='World of Warcraft' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'World of Warcraft'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf4d33ae-2de6-49be-8780-584aa0ac214a" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable ContentHash="3-Vycptopkahih4FzcZmng" DesignTimeRectangle="414, 438, 60, 26" Guid="43f8cf74-1e93-469a-a864-97c5207a8cfc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAaCAYAAADrCT9ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHCSURBVFhH7Zg9TgMxEEatRMnuJlKkSIgiUFHS0nAAxAngADS0lFT0SDlBToBET0VJyxW4Alcw+nZwPDserxI04WfZ4knrmbE1z/Y2doPBwOsMGVrsp5B9bsPQu3FR+TWlZPKJFmuhakHWbo3sUYPXxblFOfFuVFQ+kBeXyCa+E9lLjjgHojXVNCOsSI+SBfXF25HzJLJeI9Nn0jPVkyjJ1sKLxcJ3FedcjYhRsMtw+V64i/TCFsxnaey3YC78+kAcHaa5NrBJJ8dp3BpT4dsr51d3cQwBMJvS+PI8SmFDri/iGPOeV3qtJabCaPjsNI4h8fbk/N6c5DDG6RdjEobU+wvV3t9EYV5r/XvsVBgSaB7fj0vKYwMO9un0EIMwNgDy4XbwWr6eBabCEORXWgpDKuQghFOGlCbMay0xFcb1wzUM15gL40QRhyjG4QqHE0Ye3+H0ea0lpsJ/gV646/TCXeffCTcYFaUn4lMPf+6h71KlrsXzj5graTzJSJJnnk2Qzz6bPB8RTFjCG05l18IbkEhKlMbycMEdCYdYU1bW5EkENZTmIvI0uaAcS5r5rYSDdL4u1H5BWKI2rQmHvJyj5z8AeP+bfhwG46kAAAAASUVORK5CYII=" InformativeScreenshot="b1778df15f34869fa440afa6dc391185.png" Reference="BfreUXIJNkqB7rdR721xDQ/bZtuNhx_I025O0ViOLQ_cg" ScopeSelectorArgument="&lt;wnd cls='GxWindowClassD3d' title='World of Warcraft' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="0, 0, 1298, 647" Guid="0c5c7ef3-4c22-4b09-979e-b0762e1a1995" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <Delay Duration="[New TimeSpan(0, 0, 3 * CInt(NrToBeCrafted))]" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_12" Text="[&quot;Done&quot;]" />
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'World of Warcraft'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf4d33ae-2de6-49be-8780-584aa0ac214a" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable ContentHash="aWnorTVSn0a7WcSULBVUgw" DesignTimeRectangle="507, 116, 36, 28" Guid="3d0315aa-2b4f-419c-bab2-119c2b1cc16e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAYAAAAJKR1YAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHPSURBVFhHzda/TsJAHMDxLgRQoHSQEGICGggEhMSE2j8JtPQlnH0PY3wFEyc3J9/Ax3AwcTHOvoELy8/cXa931ztoa7EwfFNoe9dPrqVBGzsBTOwAJk4AF47P5cHU8cJtuM9e4c8s9J2PHZvxuaypu2JxY+lx7bhhAKuZnK7Yp6jGp7PweFp4rgDqdDqwzyTQn1YoxSolrlCjGYIM4balA/GAgwFRxEGBeFT8nKwgnYLIM5QNxMNygnhUflCYpmnSryWpDCD5gklRENqmqXDQabksIa7q9f2AXmcz+HZdOCmVIsBNuw1rz4PAMIoHob4sC8D34bJWg/teD39+Ho2UK4Tn2ACa7gp0VqnA23yOIajHwSA6JoDoHP8NQr2MxxHIb5Jz4iAynv2aJZCzI9BdeJvQ8/RumhKKgcTXCwHRNzX525Ib9DQcYsBDv4+/n1er8GGa8LNYwHWrlQ6E/mfZCOTlB6Fuu13hFqE+LWvLCpEkkL2koLRvaTJRHJSUDCLziSCPgkS1jNgMypI8F/dQ7wKUNXkuHoRuVwRiF4oPUEfPyzJGHQMhjADaTyJoeUgggikApCv2sQoGIQwPknEFg1Aygk8JOkoYlK/tc6tAvxLM5oRSYJQYAAAAAElFTkSuQmCC" InformativeScreenshot="847b515c2c5217a9b162ed947d80de1f.png" Reference="BfreUXIJNkqB7rdR721xDQ/EeRkYjA0Q0i7hrJUNyqy8w" ScopeSelectorArgument="&lt;wnd cls='GxWindowClassD3d' title='World of Warcraft' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="0, 0, 1298, 647" Guid="a5bca9a8-74a1-4c7a-b509-b92e4126490f" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Int32">[RowToComplete]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+              <Sequence x:Key="Wool Cloth" DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,282.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Get 135-180 Wool Cloth&quot;]" />
+                <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_5">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Int32">[RowToComplete]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+              <Sequence x:Key="Slik Cloth" DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,282.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_9" Text="[&quot;Get 760-820 Silk Cloth&quot;]" />
+                <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_6">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Int32">[RowToComplete]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Int32">2</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+              <Sequence x:Key="Mageweave Cloth" DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,282.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_10" Text="[&quot;Get 375-500 Mageweave Cloth&quot;]" />
+                <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_7">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Int32">[RowToComplete]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Int32">3</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+              <Sequence x:Key="Runecloth" DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,282.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_11" Text="[&quot;Get 900-1195 Runecloth&quot;]" />
+                <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_8">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Int32">[RowToComplete]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Int32">4</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+            </Switch>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" Shortcuts="[d(hk)]k[u(hk)]" Version="V5">
+              <uix:NKeyboardShortcuts.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" Shortcuts="[d(hk)][d(shift)]b[u(shift)][u(hk)]" Version="V5">
+              <uix:NKeyboardShortcuts.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="468.8,266.4" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="New Skill Level" Title="New Skill Level" TopMost="False">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[Skill_Level]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 1298, 647" ContentHash="59jeA4EaA0yOvVIgjrw5jw" FilePath="D:\Games\twmoa_1171\TurtleWoW\WoW.exe" IconBase64="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" InformativeScreenshot="5d83ab2c76044d1520fcca3906f2a39b.png" Reference="BfreUXIJNkqB7rdR721xDQ/dgPrVGPKzUiSqmHYwE5MWQ" Selector="&lt;wnd cls='GxWindowClassD3d' title='World of Warcraft' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:BuildDataTable DataTable="[dt_Simulated]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="536,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Type&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Skill&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Materials&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Items&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Inventory&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Type&gt;Cloth&lt;/Type&gt;&#xD;&#xA;    &lt;Skill&gt;0&lt;/Skill&gt;&#xD;&#xA;    &lt;Materials&gt;0&lt;/Materials&gt;&#xD;&#xA;    &lt;Items&gt;0&lt;/Items&gt;&#xD;&#xA;    &lt;Inventory&gt;0&lt;/Inventory&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Type&gt;Wool&lt;/Type&gt;&#xD;&#xA;    &lt;Skill&gt;0&lt;/Skill&gt;&#xD;&#xA;    &lt;Materials&gt;0&lt;/Materials&gt;&#xD;&#xA;    &lt;Items&gt;0&lt;/Items&gt;&#xD;&#xA;    &lt;Inventory&gt;0&lt;/Inventory&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Type&gt;Silk&lt;/Type&gt;&#xD;&#xA;    &lt;Skill&gt;0&lt;/Skill&gt;&#xD;&#xA;    &lt;Materials&gt;0&lt;/Materials&gt;&#xD;&#xA;    &lt;Items&gt;0&lt;/Items&gt;&#xD;&#xA;    &lt;Inventory&gt;0&lt;/Inventory&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Type&gt;Wave&lt;/Type&gt;&#xD;&#xA;    &lt;Skill&gt;0&lt;/Skill&gt;&#xD;&#xA;    &lt;Materials&gt;0&lt;/Materials&gt;&#xD;&#xA;    &lt;Items&gt;0&lt;/Items&gt;&#xD;&#xA;    &lt;Inventory&gt;0&lt;/Inventory&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Type&gt;Runecloth&lt;/Type&gt;&#xD;&#xA;    &lt;Skill&gt;0&lt;/Skill&gt;&#xD;&#xA;    &lt;Materials&gt;0&lt;/Materials&gt;&#xD;&#xA;    &lt;Items&gt;0&lt;/Items&gt;&#xD;&#xA;    &lt;Inventory&gt;0&lt;/Inventory&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <Assign sap:VirtualizedContainerService.HintSize="536,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[dt_Simulated]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="536,1098.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="502.4,916.8" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="468.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[dt_Simulated.Rows(index)("Inventory")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[New Random().Next(1, 301)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <If Condition="[index=RowToComplete]" sap:VirtualizedContainerService.HintSize="468.8,638.4" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,392" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Object">[dt_Simulated.Rows(index)("Skill")]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Object">[Skill_Level]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Object">[dt_Simulated.Rows(index)("Materials")]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Object">[(CInt(NrToBeCrafted)*2).ToString]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_11">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Object">[dt_Simulated.Rows(index)("Items")]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Object">[NrToBeCrafted]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="467.2,108" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Continue sap:VirtualizedContainerService.HintSize="433.6,48" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                </Sequence>
+              </If.Else>
+            </If>
+            <Assign sap:VirtualizedContainerService.HintSize="468.8,104.8" sap2010:WorkflowViewState.IdRef="Assign_12">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[index+1]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Simulated]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="536,355.2" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,173.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[String.Join(&quot; | &quot;, CurrentRow.ItemArray)]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dt_Simulated]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="536,139.2" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="[&quot;Excel_Simulated_Data\&quot;+DateTime.Now.ToString(&quot;dd-MM-yyyy&quot;)+&quot;.xlsx&quot;]" />
+  </Sequence>
+</Activity>
